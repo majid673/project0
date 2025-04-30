@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .advanced-container {
+            margin: 80px auto;
+            width: 60%;
+            text-align: left;
+        }
+
+        .advanced-container label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .advanced-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 5px;
+            border: 1px solid #dfe1e5;
+            border-radius: 4px;
+        }
+
+        .advanced-button {
+            margin-top: 30px;
+        }
+
+        .advanced-button input[type="submit"] {
+            background-color: #4d90fe;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .top-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .top-links a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #1a0dab;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-links">
+        <a href="index.html">Google Search</a>
+        <a href="image.html">Image Search</a>
+    </div>
+
+    <div class="advanced-container">
+        <form action="https://www.google.com/search" method="get">
+            <label>Find pages with… “all these words:”</label>
+            <input type="text" name="as_q">
+
+            <label>Find pages with… “this exact word or phrase:”</label>
+            <input type="text" name="as_epq">
+
+            <label>Find pages with… “any of these words:”</label>
+            <input type="text" name="as_oq">
+
+            <label>Find pages with… “none of these words:”</label>
+            <input type="text" name="as_eq">
+
+            <div class="advanced-button">
+                <input type="submit" value="Advanced Search">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
